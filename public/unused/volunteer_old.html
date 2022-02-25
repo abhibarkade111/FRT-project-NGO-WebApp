@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My awesome food store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="nav-background">
+            <div class="mobile-logo">
+                <img src="./icons/logo.svg" alt="">
+            </div>
+            <div class="mobile-nav">
+                <div class="cart">
+                    <div class="flex items-center">
+                        <img src="./icons/cart-dark.svg" alt="">
+                        <a href="#">0 Items - ($0.00)</a>
+                    </div>
+                </div>
+                <div class="nav-top">
+                    <ul>
+                        <li>
+                            <a href="http://127.0.0.1:5500/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/about.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Donate</a>
+                        </li>
+                        <li>
+                            <a href="#">Volunteer</a>
+                        </li>
+                        <li>
+                            <a href="#">Request For Food</a>
+                        </li>
+                        <li>
+                            <a href="#">Partner</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">Log in</a>
+                        </li>
+                        <li>
+                            <a href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact flex items-center">
+                    <img src="./icons/phone.svg" alt="">
+                    <div>
+                        <h5>Call us: (+84) 123 456 789</h5>
+                        <h6>E-mail : support@freshmeal.com</h6>
+                    </div>
+                </div>
+                <div class="time flex items-center">
+                    <img src="./icons/clock.svg" alt="">
+                    <div>
+                        <h5>Working Hours:</h5>
+                        <h6>Mon - Sat (8.00am - 12.00am)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-content-wrapper">
+            <div class="nav-trigger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-bar-chart">
+                    <line x1="12" y1="20" x2="12" y2="10" />
+                    <line x1="18" y1="20" x2="18" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="16" />
+                </svg>
+            </div>
+            <div class="site-content">
+                <header class="topbar">
+                    <div class="container flex justify-between items-center">
+                        <div class="icons">
+                            <a href="#"><img src="./icons/facebook.svg" alt=""></a>
+                            <a href="#"><img src="./icons/twitter.svg" alt=""></a>
+                            <a href="#"><img src="./icons/google.svg" alt=""></a>
+                            <a href="#"><img src="./icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="./icons/search.svg" alt=""></a>
+                        </div>
+                        <div class="auth flex items-center">
+                            <div>
+                                <img src="./icons/user-icon.svg" alt="">
+                                <a href="#">Log in</a>
+                            </div>
+                            <span class="divider">|</span>
+                            <div>
+                                <img src="./icons/edit.svg" alt="">
+                                <a href="#">Register Now</a>
+                            </div>
+                            <span class="divider">|</span>
+                            <div>
+                                <img src="./icons/cart.svg" alt="">
+                                <a href="#">0 Items - ($0.00)</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <nav>
+                    <div class="top">
+                        <div class="container flex justify-between">
+                            <div class="contact flex items-center">
+                                <img src="./icons/phone.svg" alt="">
+                                <div>
+                                    <h5>Call US: (+84) 123 456 789</h5>
+                                    <h6>E-mail : support@freshmeal.com</h6>
+                                </div>
+                            </div>
+                            <div class="branding">
+                                <img src="./icons/logo.svg" alt="">
+                            </div>
+                            <div class="time flex items-center">
+                                <img src="./icons/clock.svg" alt="">
+                                <div>
+                                    <h5>Working Hours:</h5>
+                                    <h6>Mon - Sat (8.00am - 12.00am)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar magic-shadow">
+                        <div class="container flex justify-center">
+                            <a href="http://127.0.0.1:5500/index.html">Home</a>
+                            <a href="http://127.0.0.1:5500/about.html">About us</a>
+                            <a href="#">Doante</a>
+                            <a href="http://127.0.0.1:5500/Volunteer.html" class="active">Volunteer</a>
+                            <a href="#">Request For Food</a>
+                            <a href="#">Partner</a>
+                            <a href="#">Contact us</a>
+                            <a href="#">Gallery</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <header class="hero flex items-center">
+                    <div class="container">
+
+                        <h1>BECOME A
+                            <span> HUNGER HERO </span>
+                        </h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the
+                            industry's standard dummy.</p>
+                        <div>
+                            <button class="btn btn-primary">Volunteer with us</button>
+
+                        </div>
+
+                    </div>
+                </header>
+
+                <section class="about-meal">
+                    <div class="container">
+
+                        <div class="about-meal-wrap flex">
+                            <div class="flex-1">
+                                <img src="./images/image5.png" alt="">
+                            </div>
+                            <div class="flex-1">
+                                <h2>Elite organization is a not for profit organization, designing interventions to
+                                    reduce hunger among underserved communities in India.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quia qui in, fugit
+                                    quisquam debitis nam tempora nobis sit tenetur hic dolorum nisi provident id beatae
+                                    nesciunt laudantium quaerat architecto blanditiis eligendi! Obcaecati tempora
+                                    blanditiis ex. Voluptatibus est veniam sapiente labore libero numquam ducimus sequi.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A culpa non maxime? Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nostrum?</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="volunteer">
+                    <section class="Volunteer-done">
+
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-md-12 ">
+
+                                    <h2>What Actually our <span>Volunteer</span> done.</h2>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro natus id
+                                            omnis sit molestias sint, saepe vero aliquid recusandae ex dolores
+                                            aspernatur minus.</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro natus id
+                                            omnis sit molestias sint, saepe vero aliquid recusandae ex dolores
+                                            aspernatur minus.</li>
+                                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro natus id
+                                            omnis sit molestias sint, saepe vero aliquid recusandae ex dolores
+                                            aspernatur minus.</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="forms container">
+                    <h1>Volunteer with us</h1>
+                    <div class="container">
+
+                        <form>
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" id="form6Example1" class="form-control" />
+                                        <label class="form-label" for="form6Example1">First name</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" id="form6Example2" class="form-control" />
+                                        <label class="form-label" for="form6Example2">Last name</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="form6Example3" class="form-control" />
+                                <label class="form-label" for="form6Example3">Current organization or Institute </label>
+                            </div>
+
+                            <!-- Text input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="form6Example4" class="form-control" />
+                                <label class="form-label" for="form6Example4">Address</label>
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form6Example5" class="form-control" />
+                                <label class="form-label" for="form6Example5">Email</label>
+                            </div>
+
+                            <!-- Number input -->
+
+                            <input type="number" id="form6Example6" class="form-control" />
+                            <label class="form-label" for="form6Example6">Phone</label>
+
+                            <div class="form-outline mb-4">
+
+                                <h5>How often will you be able to help?</h5>
+                                <div class="row">
+                                    
+                                    <div class="col-md-4">                                    <div>
+                                        
+                                            <input type="radio" name="question-1-answers" id="question-1-answers-A"
+                                                value="A">
+                                            <label for="question-1-answers-A">I can lead initiatives </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                    <div>
+                                        
+                                            <input type="radio" name="question-1-answers" id="question-1-answers-A"
+                                                value="A">
+                                            <label for="question-1-answers-A">Multiple days in a week </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                    <div>
+                                        
+                                            <input type="radio" name="question-1-answers" id="question-1-answers-A"
+                                                value="A">
+                                            <label for="question-1-answers-A">Once a week  </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                    <div>
+                                        
+                                            <input type="radio" name="question-1-answers" id="question-1-answers-A"
+                                                value="A">
+                                            <label for="question-1-answers-A">Twice a month
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Message input -->
+                            <div class="form-outline mb-4">
+                                <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                                <label class="form-label" for="form6Example7">Additional information</label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <button type="submit" class="btn btn-primary  btn-block mb-4">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </section>
+
+
+
+
+
+                <footer>
+                    <div class="container">
+                        <div class="box">
+                            <h3>About us</h3>
+                            <p>It was popularised in the 1960 with the release of Latest sheets containing Lorem Ipsum
+                                passage.</p>
+                            <button class="btn btn-secondary">Read More</button>
+                        </div>
+                        <div class="box">
+                            <h3>Quik Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Products</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>Follow Us</h3>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/codersgyan">
+                                            <img src="./icons/facebook.svg" alt="">
+                                            <span>Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/CoderGyan">
+                                            <img src="./icons/twitter.svg" alt="">
+                                            <span>Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/google.svg" alt="">
+                                            <span>Google +</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/codersgyan/">
+                                            <img src="./icons/instagram.svg" alt="">
+                                            <span>Instagram</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box instagram-api">
+                            <h3>Instagram</h3>
+                            <div class="post-wrap">
+                                <div>
+                                    <img src="./images/food-table.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/food-table.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/food-table.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/food-table.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/food-table.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/food-table.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <footer class="copyright">
+                    <div>
+                        Copyright © 2020 .All rights reserved by <a href="https://www.instagram.com/codersgyan/">Coder's
+                            Gyan</a>.
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+
+
+/* .bg-c{
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    transform:translateY(15px);
+	box-shadow:0 0 20px rgba(0,0,0,0.3);   
+ 
+} */
+
+.dev{
+    padding: 50px;
+
+    margin: 5px;
+    margin-top: 20px;
+    transform:translateY(10px);
+	box-shadow:0 0 20px rgb(157 150 150 / 30%);
+    border-radius: 20px;
+}
+.dev a{
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.fa-instagram{
+    color: rgb(247, 21, 160);
+}
+.fa-linkedin{
+    color: blue;
+}
+.fa-envelope{
+    color: rgb(27, 180, 240);
+}
+.fa-fecebook{
+    color: blue;
+}
+.fa:hover{
+    color: rgb(3, 3, 99);
+}
+.h3-ul{
+    border-bottom: 1px solid blue;
+}
+.hedi-h1::after{
+    background: linear-gradient( #247ce2 0%,#2f20fa 0%, #06ccfd 100%);
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    margin: 10px auto;
+}
+.descri{
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 25px;
+}
+.links{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.links a{
+    text-decoration: none;
+}
+.home-li{
+    padding: 10px 40px;
+    padding-top: 0px;
+    color: rgb(255, 0, 170);
+}
+.tut{
+    padding: 10px 40px;
+    padding-top: 0px;
+    color: blue;
+}
+.blog-li{
+    padding: 10px 40px;
+    padding-top: 0px;
+    color: crimson;
+}
+.bg-devc{
+    background-color: white;
+}
+.bg-devcs{
+    background-color: white;
+    margin-bottom: 2rem;
+}
+.bg-devc:hover{
+    background-color: rgb(242, 255, 255);
+
+}
+.bg-devcs:hover{
+    background-color: rgb(242, 255, 255);
+
+}
+.a-mail{
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+}
+.fa-mail{
+    display: flex;
+
+}
+.aa-mail{
+    display: flex;
+    text-decoration:none;
+}
+.ro-fl{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-co{
+    padding: 30px;
+    margin: 20px;
+}
+.hed{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.fa{
+    font-size: 1.7rem;   
+    padding: 10px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1.7rem;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

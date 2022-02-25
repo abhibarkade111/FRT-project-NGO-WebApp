@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aadhar Foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="nav-background">
+            <div class="mobile-logo ">
+               <h2><b> Aadhar Foundation</b></h2>
+            </div>
+            <div class="mobile-nav">
+                
+                <div class="nav-top">
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about">About us</a>
+                        </li>
+                        <li>
+                            <a href="/donate">Donate</a>
+                        </li>
+                        <li>
+                            <a href="/volunteer">Volunteer</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Request
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="/request-food">Request For Food</a></li>
+                              <li><a class="dropdown-item" href="/request-cloth">Request For Clothes</a></li>
+                              
+                            </ul>
+                          </li>
+                        <li>
+                            <a href="/partner">Partner</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/contact">Contact us</a>
+                        </li>
+                      
+                    </ul>
+                </div>
+                <div class="contact flex items-center">
+                    <img src="./icons/phone.svg" alt="">
+                    <div>
+                        <h5>Call us: (+91) 123 456 789</h5>
+                        <h6>E-mail : aadharfoundation@gmail.com</h6>
+                    </div>
+                </div>
+                <div class="time flex items-center">
+                    <img src="./icons/clock.svg" alt="">
+                    <div>
+                        <h5>Working Hours:</h5>
+                        <h6>Mon - Sat (8.00am - 12.00pm)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-content-wrapper">
+            <div class="nav-trigger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-bar-chart">
+                    <line x1="12" y1="20" x2="12" y2="10" />
+                    <line x1="18" y1="20" x2="18" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="16" /></svg>
+            </div>
+            <div class="site-content">
+                <header class="topbar">
+                    <div class="container flex justify-between items-center">
+                        <div class="icons">
+                            <a href="#"><img src="./icons/facebook.svg" alt=""></a>
+                            <a href="#"><img src="./icons/twitter.svg" alt=""></a>
+                            <a href="#"><img src="./icons/google.svg" alt=""></a>
+                            <a href="#"><img src="./icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="./icons/search.svg" alt=""></a>
+                        </div>
+                        <div class="auth flex items-center">
+                            <div>
+                                <img src="./icons/user-icon.svg" alt="">
+                                <a href="/donate">Donate</a>
+                            </div>
+                            <span class="divider">|</span>
+                            <div>
+                                <img src="./icons/edit.svg" alt="">
+                                <a href="/volunteer">Register Now</a>
+                            </div>
+                            <span class="divider">|</span>
+                           
+                        </div>
+                    </div>
+                </header>
+
+                <nav>
+                    <div class="top">
+                        <div class="container flex justify-between">
+                            <div class="contact flex items-center">
+                                <img src="./icons/phone.svg" alt="">
+                                <div>
+                                    <h5>Call US: (+91) 123 456 789</h5>
+                                    <h6>E-mail : aadharfoundation@gmail.com</h6>
+                                </div>
+                            </div>
+                            <div class="branding">
+                               <h2><b>Aadhar Foundation</b></h2>
+                            </div>
+                            <div class="time flex items-center">
+                                <img src="./icons/clock.svg" alt="">
+                                <div>
+                                    <h5>Working Hours:</h5>
+                                    <h6>Mon - Sat (8.00am - 12.00pm)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar magic-shadow">
+                        <div class="container flex justify-center">
+                            <a href="/">Home</a>
+                            <a href="/about">About us</a>
+                            <a href="/donate">Donate</a>
+                            <a href="/volunteer">Volunteer</a>
+                            
+                           
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Request
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="/request-food">Request For Food</a></li>
+                                  <li><a class="dropdown-item" href="request-cloth">Request For Clothes</a></li>
+                                  
+                                </ul>
+                              </li>
+                              
+                            <a href="/partner">Partner</a>
+                            <a href="/contact"  class="active">Contact us</a>
+                           
+                        </div>
+                    </div>
+                </nav>
+
+                <header class="hero hero-contact flex items-center">
+                    <div class="container">
+
+
+                    </div>
+                </header>
+
+
+
+
+                <section class="forms forms-request forms-contact container">
+                    <h1>We’d love to hear from you
+                    </h1>
+                    <div class="container">
+
+                        <form id="form" action="/contactMain" method="post">
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="form6Example5" class="form-control" name="fullName" placeholder="Full Name" />
+                                <label id="errorName" for="text"></label>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="number" id="form6Example1" name="mobileNo" class="form-control"
+                                            placeholder="Moobile No" />
+                                            <label id="errorMob" for="text"></label>
+
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="email" id="form6Example2" name="email" class="form-control"
+                                            placeholder="Email id" />
+                                            <label id="errorEmail" for="text"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="text" id="city" name="city" class="form-control" placeholder="City" />
+                                <label id="errorCity" for="text"></label>
+
+                            </div>
+                            <div class="form-outline mb-4">
+                                <div class="form-group">
+                                    <label for="sel1">Select category</label>
+                                    <select class="form-control" name="category" id="sel1">
+                                        <option>Donate</option>
+                                        <option>Get Support</option>
+                                        <option>Volunteer</option>
+                                        <option>Partner</option>
+                                    </select>
+
+
+                                </div>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <textarea class="form-control" name="details" placeholder="Write Details Here" id="form6Example7"
+                                    rows="4"></textarea>
+                                    <label id="errorText" for="text"></label>
+
+                            </div>
+
+
+
+
+                            <!-- Number input -->
+
+
+
+
+
+                            <!-- Submit button -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <button type="submit" id="button-main-contact" class="btn btn-primary  btn-block mb-4">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </section>
+
+
+                <section class="forms forms-request forms-contact container">
+                    <h1>Want to Give any Suggestion
+                    </h1>
+                    <div class="container">
+
+                        <form id="form1" action="/contact" method="post">
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+
+                            <!-- Email input -->
+                            
+
+                            <div class="form-outline mb-4">
+                                <textarea class="form-control" required name="suggestions" placeholder="Write Suggestion Here" id="suggestion"
+                                    rows="4"></textarea>
+                                    <label id="errorText1" for="text"></label>
+
+                            </div>
+
+
+
+
+                            <!-- Number input -->
+
+
+
+
+
+                            <!-- Submit button -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <button type="submit" id="btn-contactsugg" class="btn btn-primary  btn-block mb-4">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </section>
+
+
+                <footer>
+                    <div class="container">
+                        <div class="box">
+                            <h3>About us</h3>
+                            <p>We will serve meals and clothes as per the requirements.</p>
+                           <a href="/about"> <button class="btn btn-secondary">Read More</button></a>
+                        </div>
+                        <div class="box">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/about">About us</a>
+                                </li>
+                                <li>
+                                    <a href="/donate">Donate</a>
+                                </li>
+                                <li>
+                                    <a href="/volunteer">Volunteer</a>
+                                </li>
+                                <li>
+                                    <a href="/partner">Partner</a>
+                                </li>
+                                <li>
+                                    <a href="/contact">Contact us</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>Follow Us</h3>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/facebook.svg" alt="">
+                                            <span>Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/twitter.svg" alt="">
+                                            <span>Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/google.svg" alt="">
+                                            <span>Google +</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/instagram.svg" alt="">
+                                            <span>Instagram</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h3>Get Involved</h3>
+                            <ul>
+                                <li>
+                                    <a href="/donate">Donate</a>
+                                </li>
+                                <li>
+                                    <a href="/volunteer">Volunteer with us</a>
+                                </li>
+                                <li>
+                                    <a href="/partner">Partner with us</a>
+                                </li>
+                               
+                                
+
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </footer>
+                <footer class="copyright">
+                    <div>
+                        Copyright © 2021 .All rights reserved by <a href="/">Aadhar Foundation</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+
+    <script src="./js/conatct.js"></script>
+</body>
+
+</html>

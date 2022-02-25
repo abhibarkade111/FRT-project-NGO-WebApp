@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aadhar Foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="nav-background">
+            <div class="mobile-logo ">
+               <h2><b> Aadhar Foundation</b></h2>
+            </div>
+            <div class="mobile-nav">
+                
+                <div class="nav-top">
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about">About us</a>
+                        </li>
+                        <li>
+                            <a href="/donate">Donate</a>
+                        </li>
+                        <li>
+                            <a href="/volunteer">Volunteer</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Request
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="/request-food">Request For Food</a></li>
+                              <li><a class="dropdown-item" href="/request-cloth">Request For Clothes</a></li>
+                              
+                            </ul>
+                          </li>
+                        <li>
+                            <a href="/partner">Partner</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/contact">Contact us</a>
+                        </li>
+                      
+                    </ul>
+                </div>
+                <div class="contact flex items-center">
+                    <img src="./icons/phone.svg" alt="">
+                    <div>
+                        <h5>Call us: (+91) 123 456 789</h5>
+                        <h6>E-mail : aadharfoundation@gmail.com</h6>
+                    </div>
+                </div>
+                <div class="time flex items-center">
+                    <img src="./icons/clock.svg" alt="">
+                    <div>
+                        <h5>Working Hours:</h5>
+                        <h6>Mon - Sat (8.00am - 12.00pm)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-content-wrapper">
+            <div class="nav-trigger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-bar-chart">
+                    <line x1="12" y1="20" x2="12" y2="10" />
+                    <line x1="18" y1="20" x2="18" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="16" /></svg>
+            </div>
+            <div class="site-content">
+                <header class="topbar">
+                    <div class="container flex justify-between items-center">
+                        <div class="icons">
+                            <a href="#"><img src="./icons/facebook.svg" alt=""></a>
+                            <a href="#"><img src="./icons/twitter.svg" alt=""></a>
+                            <a href="#"><img src="./icons/google.svg" alt=""></a>
+                            <a href="#"><img src="./icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="./icons/search.svg" alt=""></a>
+                        </div>
+                        <div class="auth flex items-center">
+                            <div>
+                                <img src="./icons/user-icon.svg" alt="">
+                                <a href="/donate">Donate</a>
+                            </div>
+                            <span class="divider">|</span>
+                            <div>
+                                <img src="./icons/edit.svg" alt="">
+                                <a href="/volunteer">Register Now</a>
+                            </div>
+                            <span class="divider">|</span>
+                           
+                        </div>
+                    </div>
+                </header>
+
+                <nav>
+                    <div class="top">
+                        <div class="container flex justify-between">
+                            <div class="contact flex items-center">
+                                <img src="./icons/phone.svg" alt="">
+                                <div>
+                                    <h5>Call US: (+91) 123 456 789</h5>
+                                    <h6>E-mail : aadharfoundation@gmail.com</h6>
+                                </div>
+                            </div>
+                            <div class="branding">
+                               <h2><b>Aadhar Foundation</b></h2>
+                            </div>
+                            <div class="time flex items-center">
+                                <img src="./icons/clock.svg" alt="">
+                                <div>
+                                    <h5>Working Hours:</h5>
+                                    <h6>Mon - Sat (8.00am - 12.00pm)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar magic-shadow">
+                        <div class="container flex justify-center">
+                            <a href="/">Home</a>
+                            <a href="/about">About us</a>
+                            <a href="/donate" class="active">Donate</a>
+                            <a href="/volunteer">Volunteer</a>
+                            
+                           
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Request
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="/request-food">Request For Food</a></li>
+                                  <li><a class="dropdown-item" href="request-cloth">Request For Clothes</a></li>
+                                  
+                                </ul>
+                              </li>
+                              
+                            <a href="/partner">Partner</a>
+                            <a href="/contact">Contact us</a>
+                           
+                        </div>
+                    </div>
+                </nav>
+
+                <header class="hero hero-donate flex items-center">
+                    <div class="container">
+
+                        <h1>
+                            <span>DONATE NOW </span>
+                        </h1>
+                        <p>Your donations will be immidiately put to use.</p>
+                        <div>
+                           <a href=" /donate"><button class="btn btn-primary">Partner with us</button></a> 
+
+                        </div>
+
+                    </div>
+                </header>
+
+                <section class="about-meal">
+                    <div class="container">
+                        <h2>How your donations will help ?.</h2>
+                        <div class="about-meal-wrap flex">
+
+                            <div class="flex-1">
+                                <img src="https://media.gettyimages.com/photos/generous-people-helping-to-poor-people-picture-id1139776668?k=6&m=1139776668&s=612x612&w=0&h=VNUe36-Oy5kgDWiQL_mrRfjUjLNYPZ9euG19DAoLD2o=" alt="">
+                            </div>
+                            <div class="flex-1">
+                                <h2>Food donations</h2>
+                                <p>We aim to redistribute surplus food to those who are in need of it. If you have excess food from an event, party, wedding etc, please call our helpline, our volunteers will collect the excess food from you and distribute it among people who need it.  The excess food will be checked for quality because lack of proper refrigeration and storage tend to spoil food.</p>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="volunteer">
+                    <section class="Volunteer-done">
+
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-md-12 ">
+
+                                    <h2>Cloth donations</h2>
+                                    <p>Many among India’s poor and underprivileged are short of adequate clothing. Clothes donation not only make lives of the underprivileged better but also promote the eco-friendly concept of recycling.
+    
+                                        In our urban homes, we have clothes that do not fit us anymore. As children grow up, they outgrow their clothes every year. So instead of storing the old clothes or throwing them away, donate used clothes because what is waste for you could be a resource for the less fortunate.</p>
+                                        <p>
+                                            We will recieve your donations. We will do processes like sorting ,sewing if needed, tattered or torn used clothes are processed to make socks and other things.Clothes fit for use will get collected by our volunteers and then packed and transported for distribution to poor peoples.
+                                        </p>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            
+
+                <section class="forms forms-request container">
+                    <h1>Join hands to make a difference</h1>
+                    <div class="container">
+
+                        <form action="/donate", method="post">
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+                            
+                            <div class="form-outline mb-4">
+                                    <div class="form-group">
+                                        <label for="sel1">Select Donation Type</label>
+                                        <select class="form-control" name="category" id="sel1">
+                                            <option>Food</option>
+                                            <option>Cloths</option>
+                                            <option>Money</option>
+                                            <option>Other</option>
+                                        </select>
+
+
+                                    </div>
+                            </div>
+                            <!-- Text input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="form6Example3" name="orgName" placeholder="Oraganization Name" class="form-control" />
+                                <label id="errorOrgName" for="text"></label>
+                                
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="text" id="form6Example4" name="address" placeholder="Address of institution" class="form-control" />
+                                <label id="errorAdd" for="text"></label>
+                               
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" id="form6Example1" name="city" placeholder="City" class="form-control" />
+                                        <label id="errorCity" for="text"></label>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="number" id="form6Example2" name="pincode" placeholder="Pincode" class="form-control" />
+                                        <label id="errorPin" for="text"></label>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text input -->
+                            
+
+                            <h5>Primary point of contact</h5>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" placeholder="Full Name" name="fName" id="form6Example5" class="form-control" />
+                                <label id="errorName" for="text"></label>
+                          
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="number" id="mobNo" placeholder="Mobile No" name="mobileNo" class="form-control" />
+                                        <label id="errorMob" for="text"></label>
+                            
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="email" id="email" placeholder="Email id" name="email" class="form-control" />
+                                        <label id="errorEmail" for="text"></label>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Number input -->
+
+
+                           
+                            <!-- Message input -->
+                            <div class="form-outline mb-4">
+                                <textarea class="form-control" name="details" placeholder="Write Details Here" id="form6Example7" rows="4"></textarea>
+                                <label class="form-label" for="form6Example7">Anything you would like for us to know?</label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <button type="submit" class="btn btn-primary  btn-block mb-4" id="donateSubmit">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </section>
+
+
+
+
+               <footer>
+                    <div class="container">
+                        <div class="box">
+                            <h3>About us</h3>
+                            <p>We will serve meals and clothes as per the requirements.</p>
+                           <a href="/about"> <button class="btn btn-secondary">Read More</button></a>
+                        </div>
+                        <div class="box">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/about">About us</a>
+                                </li>
+                                <li>
+                                    <a href="/donate">Donate</a>
+                                </li>
+                                <li>
+                                    <a href="/volunteer">Volunteer</a>
+                                </li>
+                                <li>
+                                    <a href="/partner">Partner</a>
+                                </li>
+                                <li>
+                                    <a href="/contact">Contact us</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>Follow Us</h3>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/facebook.svg" alt="">
+                                            <span>Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/twitter.svg" alt="">
+                                            <span>Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/google.svg" alt="">
+                                            <span>Google +</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/instagram.svg" alt="">
+                                            <span>Instagram</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h3>Get Involved</h3>
+                            <ul>
+                                <li>
+                                    <a href="/donate">Donate</a>
+                                </li>
+                                <li>
+                                    <a href="/volunteer">Volunteer with us</a>
+                                </li>
+                                <li>
+                                    <a href="/partner">Partner with us</a>
+                                </li>
+                               
+                                
+
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </footer>
+                <footer class="copyright">
+                    <div>
+                        Copyright © 2021 .All rights reserved by <a href="/">Aadhar Foundation</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script src="js/donate.js" ></script>
+
+</body>
+
+</html>
