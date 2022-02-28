@@ -8,11 +8,11 @@
 ### This web based restaurant application has been developed for the accomplishment of Future Ready Talent Internship program launched by Microsoft, Future Skills Prime, Quess, Github and EY
 
 #### Screenshots:
-![NGO website project](https://github.com/abhibarkade111/FRT-NGO-WebApp-Project/blob/master/screenshot1.png?raw=true)
+![NGO website project](https://github.com/abhibarkade111/FRT-project-NGO-WebApp/blob/master/screenshot1.png?raw=true)
 
-![NGO website project](https://github.com/abhibarkade111/FRT-NGO-WebApp-Project/blob/master/screenshot2.png?raw=true)
+![NGO website project](https://github.com/abhibarkade111/FRT-project-NGO-WebApp/blob/master/screenshot2.png?raw=true)
 
-![NGO website project](https://github.com/abhibarkade111/FRT-NGO-WebApp-Project/blob/master/screenshot3.png?raw=true)
+![NGO website project](https://github.com/abhibarkade111/FRT-project-NGO-WebApp/blob/master/screenshot3.png?raw=true)
 
 
 ### Link
